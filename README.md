@@ -23,3 +23,17 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+
+# Here's your forcast!
+```
+Your greeted with a page that has no city list.
+```
+![Started of Dashboard](assets/img/PlainWeatherDash.jpg)
+```
+You can then input any citys your looking for in the serch bar on the left hand side.
+```
+![SearchBar](assets/img/SearchBar.jpg)
+```
+Once you have all the citys list that your looking for you can switch between them to veiw the forcast 5 days head of time.
+```
+![miniGif](assets/img/MiniWeatherClip%20-%20Made%20with%20Clipchamp.gif)
