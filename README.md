@@ -1,7 +1,10 @@
 # Checking the Weather
-~~~
-My goal is to create  a weather app for you. No matter where your located. Just put in your city and state and your get your forcast.
-~~~
+
+My goal is to create  a weather app for you. No matter where your located.
+ Just put in your city and state and your get your forcast.
+
+ [Check your forcast here!](https://missenvii.github.io/Whats-the-weather/)
+
 ## User Story
 ```
 AS A traveler
