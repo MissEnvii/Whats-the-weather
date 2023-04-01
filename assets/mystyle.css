@@ -1,44 +1,142 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
-  
-  .forecast {
-    font-size: 0.9em;
-  }
-  
-  .topnav {
-      color: #e9e9e9;
-      text-align: center;
-      font-size: 17px;
-      background-color: #3f3f3f;
-      padding: 14px 16px;
-  }
-  
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #e9e9e9;
-    color: #000000;
-    text-align: center;
-  }
-  
-  .city-name {
-    font-weight: bold;
-    font-size: x-large;
-  }
-  
-  p.current,
-  .city-name {
-    color: #000000;
-  }
-  
-  p {
-    color: white;
-  }
+:root {
+  --darkText: #262626;
+  --lightText: white;
+  --asideBackground: #f2f2f2;
+  --borderColor: #e6e6e6;
+  --buttonColor: #3C5BFE;
+  --buttonColorHover: #8FCAFF;
+  font-family: 'Roboto', sans-serif;
+  color: var(--darkText);
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 auto;
+  background: var(--darkText);
+  padding: 1%;
+  text-align: center;
+  color: var(--lightText);
+}
+
+aside {
+  float: left;
+  background: var(--asideBackground);
+  width: 20%;
+  height: 100vh;
+  padding: 10px;
+}
+
+aside h3 {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+#searchBar {
+  width: 200px;
+  height: 30px;
+  border: var(--borderColor) 1px solid;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#searchBar:focus {
+  outline: none;
+  border: var(--buttonColorHover) 1px solid;
+}
+
+#searchButton {
+  background: var(--buttonColor);
+  border: var(--buttonColor) 2.5px solid;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+#searchButton:hover {
+  cursor: pointer;
+  border: var(--buttonColorHover) 2.5px solid;
+}
+
+#searchButton:focus {
+  outline: none;
+}
+
+#searchedCities {
+  background: var(--lightText);
+  height: 408px;
+  border: var(--borderColor) 1px solid;
+  border-radius: 5px;
+}
+
+.searchedCity {
+  height: 50px;
+  padding-left: 25px;
+  line-height: 50px;
+  border-bottom: var(--borderColor) 1px solid;
+}
+
+#city8 {
+  border-bottom: none;
+}
+
+.hoverPointer {
+  cursor: pointer;
+}
+
+main {
+  float: left;
+  width: 75%;
+  height: 100vh;
+}
+
+#weatherToday {
+  margin: 15px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 25px;
+  border: var(--borderColor) 1px solid;
+  border-radius: 5px;
+  position: relative;
+}
+
+#currentIcon {
+  position: absolute;
+  top: 25px;
+}
+
+#currentUVIndex {
+  background: var(--asideBackground);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--lightText);
+}
+
+#weatherForecast {
+  margin: 15px;
+  width: 100%;
+  border: var(--lightText) 1px solid;
+}
+
+#dateContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.dateBox {
+  background: var(--buttonColor);
+  width: 150px;
+  height: 175px;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: var(--lightText);
+  margin-right: 30px;
+}
+
+.weatherEmoji {
+  padding-left: 10px;
+}
